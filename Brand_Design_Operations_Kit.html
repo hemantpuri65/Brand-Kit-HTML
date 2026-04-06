@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Design Operations Kit — Vibe Marketing Agency</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.hd{background:linear-gradient(135deg,#7c3aed,#2563eb);padding:24px;text-align:center}
+.hd h1{font-size:1.4em;color:#fff}
+.hd p{color:#c4b5fd;font-size:0.8em}
+.tabs{display:flex;flex-wrap:wrap;gap:2px;background:#1e293b;padding:5px;position:sticky;top:0;z-index:99}
+.tab{padding:6px 9px;background:#334155;color:#94a3b8;cursor:pointer;border-radius:6px;font-size:0.7em;transition:all .2s}
+.tab:hover{background:#475569}
+.tab.on{background:#7c3aed;color:#fff}
+.pn{display:none;padding:18px}
+.pn.show{display:block}
+.c{max-width:900px;margin:0 auto}
+h2{color:#a78bfa;font-size:1.2em;margin:0 0 12px;border-bottom:2px solid #7c3aed;padding-bottom:6px}
+h3{color:#818cf8;font-size:0.95em;margin:16px 0 6px}
+p,li{font-size:0.83em;margin-bottom:5px}
+ul,ol{padding-left:18px}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:0.78em}
+th{background:#334155;color:#a78bfa;padding:5px 7px;text-align:left;border:1px solid #475569}
+td{padding:5px 7px;border:1px solid #334155;vertical-align:top}
+tr:nth-child(even){background:#1e293b}
+.cb{position:relative;background:#1e293b;border:1px solid #334155;border-radius:8px;padding:12px;margin:8px 0;white-space:pre-wrap;font-family:'Cascadia Code',monospace;font-size:0.76em;line-height:1.5;max-height:600px;overflow-y:auto}
+.cp{position:absolute;top:5px;right:5px;background:#7c3aed;color:#fff;border:none;padding:3px 10px;border-radius:4px;cursor:pointer;font-size:0.7em}
+.cp.ok{background:#059669}
+.al{padding:9px 12px;border-radius:8px;margin:8px 0;font-size:0.8em}
+.al-b{background:#1e3a5f;border-left:4px solid #3b82f6}
+.al-g{background:#14532d;border-left:4px solid #22c55e}
+.al-p{background:#3b1764;border-left:4px solid #a855f7}
+.al-y{background:#422006;border-left:4px solid #f59e0b}
+.bg{display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7em;font-weight:600}
+.bg-g{background:#059669;color:#fff}
+.bg-b{background:#2563eb;color:#fff}
+.bg-p{background:#7c3aed;color:#fff}
+@media(max-width:768px){.tabs{overflow-x:auto;flex-wrap:nowrap}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+<h1>BRAND DESIGN OPERATIONS KIT</h1>
+<p>Vibe Marketing Agency • Wave 1 Flagship Service • Companion to v3 System</p>
+<p style="margin-top:3px;color:#fbbf24;font-weight:600">Source: Brand_Design_Master_Prompt.txt — 4,320 lines • 13 phases • 103 sections • 20 follow-ups • Complete</p>
+</div>
+
+<div class="tabs">
+<div class="tab on" onclick="sw(0)">🎯 Analysis</div>
+<div class="tab" onclick="sw(1)">📋 Client Brief</div>
+<div class="tab" onclick="sw(2)">⚡ Trigger Prompt</div>
+<div class="tab" onclick="sw(3)">🎨 50 Styles</div>
+<div class="tab" onclick="sw(4)">🖼️ Asset Prompts</div>
+<div class="tab" onclick="sw(5)">🌐 GEO Bridge</div>
+<div class="tab" onclick="sw(6)">✅ Quality Gates</div>
+<div class="tab" onclick="sw(7)">🔄 20 Follow-Ups</div>
+<div class="tab" onclick="sw(8)">🔧 v3 Updates</div>
+</div>
+
+<!-- ========== TAB 0: ANALYSIS ========== -->
+<div class="pn show" id="p0">
+<div class="c">
+<h2>Strategic Analysis &amp; Integration Map</h2>
+
+<div class="al al-g"><strong>Verdict: This is your single highest-value service asset.</strong> A 13-phase brand identity system producing ~35,000 words — equivalent to what agencies charge ₹5,00,000–₹15,00,000 ($15K–$50K). Combined with your AI tool stack (Nanobanana Pro, Canva, Kittl, Recraft, Ideogram), this enables you to deliver premium brand books as a solo operator at Indian SME pricing.</div>
+
+<h3>Revenue Impact</h3>
+<table>
+<tr><th>Service Tier</th><th>Phases Used</th><th>Price (INR)</th><th>Delivery</th></tr>
+<tr><td><strong>Starter</strong> — Logo + Colors + Typography + 1 Social Template</td><td>1 (condensed), 3.0, 4.1–4.3, 7.10</td><td>₹15,000–25,000</td><td>DFY, 5-7 days</td></tr>
+<tr><td><strong>Professional</strong> — Full brand book + stationery + social kit</td><td>Phases 1–4, 7, 8</td><td>₹40,000–75,000</td><td>DFY, 10-14 days</td></tr>
+<tr><td><strong>Premium</strong> — Full system + GEO + launch strategy</td><td>All 13 phases</td><td>₹1,00,000–2,00,000</td><td>DFY, 3-4 weeks</td></tr>
+<tr><td><strong>Triple-Threat Brand Visibility</strong> — Brand + SEO + AEO + GEO</td><td>Phases 1–4, 9 + your SEO/AEO system</td><td>₹50,000–1,50,000/mo</td><td>DFY retainer</td></tr>
+<tr><td><strong>Brand Refresh</strong> — Audit + modernize existing brand</td><td>Phase 12 (audit) → targeted phases</td><td>₹20,000–50,000</td><td>DFY, 5-7 days</td></tr>
+</table>
+
+<h3>What Was Extracted &amp; Where It Lives</h3>
+<table>
+<tr><th>Source</th><th>Extracted To</th><th>Status</th></tr>
+<tr><td>Section A: 32-field Client Brief</td><td>Tab 1 — copy-paste questionnaire</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Phases 1-12 workflow</td><td>Tab 2 — Brand Engagement Trigger Prompt (Prompt 10)</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Phase 3.0: 50 Design Styles + prompt modifiers</td><td>Tab 3 — condensed style library with Nanobanana Pro modifiers</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Phase 4.5B + 7.10: Logo + Brand Kit prompts</td><td>Tab 4 — Nanobanana Pro prompt library (A-M + logo workflow)</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Phase 9: AI Content &amp; GEO</td><td>Tab 5 — GEO-Brand bridge for Triple-Threat</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Phase 7.12 + 10.1 + 12: Quality checklists</td><td>Tab 6 — brand-specific quality gates</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Section C: 20 Follow-Up Prompts</td><td>Tab 7 — adapted for your tool stack</td><td><span class="bg bg-g">Ready</span></td></tr>
+<tr><td>Role mapping + project instructions</td><td>Tab 8 — exact text to paste into v3</td><td><span class="bg bg-g">Ready</span></td></tr>
+</table>
+
+<h3>What Was NOT Extracted (and Why)</h3>
+<table>
+<tr><th>Element</th><th>Reason</th><th>When Relevant</th></tr>
+<tr><td>Phase 5: Design Tokens (5.1-5.11)</td><td>Developer-handoff spec. Not needed for brand identity deliverables.</td><td>Wave 2+ (website/app services)</td></tr>
+<tr><td>Phase 6: Sonic &amp; Sensory Identity</td><td>Niche upsell. Source prompts excellent — revisit when adding to menu.</td><td>Month 6+ upsell</td></tr>
+<tr><td>Phase 11: File delivery structure</td><td>16-folder org system. Useful but operational, not strategic.</td><td>Reference when delivering brand kits</td></tr>
+<tr><td>Section D: Self-Audit (30 gaps)</td><td>Internal QA of the prompt itself. Already resolved in source.</td><td>N/A</td></tr>
+</table>
+
+<div class="al al-p"><strong>Integration:</strong> This kit is a COMPANION to DEFINITIVE_FINAL_SYSTEM_v3.html. It adds the service-specific layer for Brand &amp; Visual Design. Create a "Brand Design" Claude project → paste project instructions from Tab 8 → use trigger prompt from Tab 2 → reference this kit.</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 1: CLIENT BRIEF ========== -->
+<div class="pn" id="p1">
+<div class="c">
+<h2>Client Intake Brief — Send Before Starting Brand Work</h2>
+
+<div class="al al-b"><strong>Usage:</strong> Send to every brand client BEFORE starting. For fields they can't answer, they write "Research and recommend for me" — Claude handles it in Phase 1. Return as Google Form, PDF, or plain text.</div>
+
+<div class="cb" id="B1"><button class="cp" onclick="cc('B1')">Copy</button>VIBE MARKETING AGENCY — BRAND DESIGN CLIENT BRIEF
+═══════════════════════════════════════════════════
+
+Fill in every section. The more detail you provide, the
+stronger your brand. For anything unknown, write:
+"Research and recommend for me."
+
+━━━ BUSINESS FUNDAMENTALS ━━━
+
+1. Brand/Business Name:
+   (No name yet? Write: "I need naming recommendations")
+2. Industry / Category:
+3. Products or Services (specific — what, pricing, delivery):
+4. Price Positioning:
+   [ ] Budget [ ] Value [ ] Mid-range [ ] Premium [ ] Luxury
+5. Business Model (D2C, B2B, retail, subscription, etc.):
+6. Geographic Markets — Primary:        Secondary:
+7. Languages (English / Hindi / Regional / Other):
+8. Brand Stage:
+   [ ] New  [ ] Early (need pro identity)  [ ] Rebranding
+   [ ] Refreshing  [ ] Sub-brand under existing parent
+
+━━━ COMPETITION ━━━
+
+9. Top 3-5 Competitors (name + your impression of their brand):
+   a)
+   b)
+   c)
+10. What makes you DIFFERENT from every competitor:
+
+━━━ TARGET AUDIENCE ━━━
+
+11. Primary Audience:
+    Age:          Location:        Occupation:
+    Income:       Pain points:     Aspirations:
+    Where online:                  Brands they love:
+12. Secondary Audience (if any):
+
+━━━ BRAND SOUL ━━━
+
+13. Mission (why does this brand exist beyond profit?):
+14. Vision (what future are you building toward?):
+15. Core Values (3-5):
+16. Founder Story (why you started, personal connection):
+17. Brand Personality — if your brand were a person, how 
+    would they talk, dress, behave at a party?
+18. Desired Emotions — how should customers FEEL? (3-5):
+19. Brand Aesthetic in exactly 3 words:
+
+━━━ PREFERENCES & CONSTRAINTS ━━━
+
+20. Existing elements to keep (logo, colors, etc.):
+21. Visual styles you're drawn to (examples/brands):
+22. Visual styles to AVOID:
+23. Primary channels (rank by importance):
+    [ ] Social (platforms:          )  [ ] Website
+    [ ] App   [ ] Retail  [ ] Packaging  [ ] Print
+24. Website status: [ ] None [ ] Needs redesign [ ] Keep
+25. Content channels (current/planned):
+26. Industry regulations affecting branding:
+27. Budget: [ ] Bootstrap [ ] Small [ ] Moderate [ ] Significant
+28. Success metrics (2-4 measurable goals):
+29. Timeline / launch deadline:
+30. Quick SWOT:
+    S:          W:          O:          T:
+31. Anything else relevant:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Return completed brief to begin your brand engagement.</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 2: TRIGGER PROMPT ========== -->
+<div class="pn" id="p2">
+<div class="c">
+<h2>Trigger Prompt 10: Brand Design Engagement</h2>
+
+<div class="al al-b"><strong>When to use:</strong> Start of any brand design project. Paste into a "Brand Design" Claude project alongside the completed client brief. This orchestrates the full engagement phase-by-phase.</div>
+
+<div class="cb" id="T10"><button class="cp" onclick="cc('T10')">Copy</button>BRAND DESIGN ENGAGEMENT — Full Service Protocol
+
+You are an elite Brand Architect operating at the intersection 
+of business strategy, neuroscience, semiotics, color science, 
+typography research, Gestalt psychology, and 2025-2026 design 
+standards.
+
+CONTEXT: I am Hemant, solo operator of Vibe Marketing Agency 
+(India). I'm executing this brand engagement for a client using
+AI tools: Nanobanana Pro (image gen), Canva (design), Kittl 
+(logo/type), Recraft (vectors), Ideogram (text-in-image). All 
+visual assets will be generated with these tools, not designed 
+manually.
+
+CLIENT BRIEF IS ATTACHED BELOW. Internalize it fully.
+
+═══ EXECUTION PROTOCOL ═══
+
+Execute in this EXACT sequence. Each phase builds on previous.
+After each phase: deliver → I review → approve or request 
+changes → then proceed to next.
+
+PHASE 1: STRATEGIC FOUNDATION (~4,000-5,500 words)
+Deliver ALL of:
+1.1 Brand DNA Blueprint (mission, vision, values, positioning,
+    UVP, Category of One, brand promise, elevator pitch)
+1.2 Brand Archetype Profile (primary + secondary Jungian 
+    archetype with shadow side, competitor archetype comparison)
+1.3 Brand Personality Profile (Aaker's spectrum, "brand as 
+    person" narrative with NAME, 5 adjectives, brand mannerisms
+    across 7 situations)
+1.4 Customer Persona Profiles (2-3 personas with demographics,
+    psychographics, behavioral, "Movie Star" exercise, trigger
+    moment, journey map with visual application column)
+1.5 Competitive Semiotic Audit (each competitor: logo, colors,
+    type, imagery, voice. Visual landscape map on 5 spectrums.
+    Semiotic codes: dominant/emergent/residual/empty space)
+1.6 Value Proposition Canvas (sells → delivers → feels → proof)
+1.7 SWOT Analysis (evidence-backed, strategy matrix)
+1.7B Regulatory Compliance Design Strategy
+1.8 Brand Storytelling Framework (StoryBrand/ABT/Hero's Journey
+    — 10-sec, 60-sec, 3-min versions + recurring themes)
+1.9 Anti-Brand Profile (anti-personality, anti-visual, 
+    anti-voice, "Evil Twin" description)
+1.9B Brand Manifesto (100-200 words, "We believe..." language)
+1.10 Brand Essence & DNA One-Pager (summary table + litmus test)
+1.11 Research Methodology Documentation
+
+Then PAUSE: "Phase 1 complete. Review and approve, or request 
+changes."
+
+PHASE 2: VERBAL IDENTITY (~2,500-3,500 words)
+2.1 Naming (if requested)
+2.2 Voice & Tone (attributes, Volume Dial system across 13 
+    channels, vocabulary, grammar rules, 14 sample copy pieces)
+2.3 Messaging Hierarchy (4 levels + tagline options + boilerplate)
+2.4 Brand Story/Origin Narrative
+2.5 Content Strategy Bridge (pillars, format matrix, SEO themes)
+2.6 AI Voice Governance preview
+
+PHASE 3.0: DESIGN STYLE SELECTION
+Present the 50-style menu organized by family. Client selects 
+1 primary + optional 1 secondary. If unsure: recommend based 
+on Phase 1 strategy.
+
+PHASE 3: CREATIVE DIRECTION (2-3 directions)
+For each: name, concept, verbal mood board, preliminary color/
+type/imagery/motion mood, strategic alignment assessment.
+Recommend one. Include mood board creation workflow.
+
+PHASE 4: VISUAL IDENTITY (~4,000-5,500 words)
+4.1 Color System (primary, secondary, accent, neutrals, 
+    semantic, dark mode, accessibility validation, cultural check)
+4.1B Color palette creation tool workflow
+4.2 Typography System (primary, secondary, full hierarchy table,
+    web font strategy, multi-script if needed)
+4.2B Font sourcing/testing/installation guide
+4.3 Logo System (concept with semiotic reasoning, Gestalt 
+    principles, construction grid, all variations, color 
+    versions, clearspace, misuse examples, motion brief)
+4.4 Imagery & Photography Style
+4.4B Photography sourcing guide
+4.5 Design Principles (5-7) + Layout grid
+4.5B Logo creation with Nanobanana Pro (7-step workflow)
+4.6 Data Visualization style
+4.7 Campaign variation framework (Brand Elasticity Scale 1-5)
+
+PHASE 5: DIGITAL DESIGN SYSTEM (~3,000-4,000 words)
+Design tokens, components, responsive specs, animations, dark 
+mode, accessibility, website direction, email system, governance.
+
+PHASE 6: SONIC & SENSORY IDENTITY (~1,500-2,000 words)
+Sonic strategy, audio mnemonic, music direction, UX sounds,
+multi-sensory extensions, creation pathway (Suno AI, AIVA).
+
+PHASE 7: BRAND ARCHITECTURE & APPLICATIONS (~3,500-5,000 words)
+Stationery, presentations, social media system, advertising,
+packaging, environmental. PLUS: complete Nanobanana Pro prompt 
+library (A-M) for brand kit asset generation.
+
+PHASE 8: BRAND GUIDELINES DOCUMENT (~2,000-2,500 words)
+Structure and content spec for the final deliverable document.
+
+PHASE 9: AI CONTENT & GEO (~2,000-2,500 words)
+AI content philosophy (Permitted/Restricted/Prohibited matrix),
+Brand Voice AI Test (5 questions), GEO entity-building strategy,
+schema markup plan, AI-citation-ready content priorities,
+quarterly GEO audit protocol.
+THIS PHASE FEEDS DIRECTLY INTO OUR TRIPLE-THREAT VISIBILITY 
+SERVICE (SEO + AEO + GEO).
+
+PHASE 10: LAUNCH & GOVERNANCE (~2,500-3,000 words)
+Pre-launch checklist, internal launch plan, external rollout 
+(weeks 1-4 + months 2-3), PR/influencer strategy, brand 
+governance framework, quarterly review protocol.
+
+PHASE 11: DESIGNER HANDOFF (~2,000-3,000 words)
+16-folder file delivery structure, format specs, brand 
+presentation, handoff checklist.
+
+PHASE 12: QA SELF-REVIEW (~2,000-2,500 words)
+22-section audit across strategy, visual, verbal, digital, 
+applications, guidelines. Final coherence verification.
+
+═══ CRITICAL RULES ═══
+
+- Justify EVERY creative decision with strategic reasoning 
+  tied to brand DNA, audience psychology, competitive landscape,
+  semiotic opportunity, or neuroscience of perception/memory.
+- ZERO generic output. Every sentence must be specific to THIS 
+  brand.
+- Where a Nanobanana Pro prompt is needed, provide the EXACT 
+  prompt text ready to paste.
+- All color specs: HEX + RGB. All type specs: specific font 
+  name + weight + size.
+- India/South Asia cultural context where relevant.
+- If conversation gets long (after Phase 4-5), I'll bridge to 
+  a new chat. Prepare a bridging summary when I ask.
+
+═══ BEGIN ═══
+
+Here is the completed client brief:
+
+[PASTE CLIENT BRIEF HERE]
+
+Start with the Input Audit (verify brief completeness), then 
+deliver Phase 1. Pause for my approval before Phase 2.</div>
+
+<div class="al al-y"><strong>Conversation management:</strong> This engagement will span 5-8 conversations. After Phase 4-5, start a new chat with: "I'm continuing a brand engagement. Here are approved Phases 1-[X]. Continue with Phase [X+1]." Paste all approved output as context.</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 3: 50 DESIGN STYLES ========== -->
+<div class="pn" id="p3">
+<div class="c">
+<h2>50 Design Styles — Quick Reference with Prompt Modifiers</h2>
+
+<div class="al al-b"><strong>Usage:</strong> Present to client during Phase 3.0. They pick 1 primary + optional 1 secondary. Each style includes the Nanobanana Pro prompt modifier — append to any image generation prompt for instant style consistency.</div>
+
+<table>
+<tr><th>#</th><th>Style</th><th>Best For</th><th>Nanobanana Pro Prompt Modifier</th></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY A: MINIMALISM & CLEAN</td></tr>
+<tr><td>1</td><td>Minimalism</td><td>Tech, luxury, SaaS, wellness</td><td>minimalist, clean lines, generous whitespace, restrained color palette, simple geometric forms, premium, elegant</td></tr>
+<tr><td>2</td><td>Neo-Minimalism</td><td>D2C, wellness, fintech</td><td>neo-minimalist, clean but warm, soft curves, subtle organic details, approachable simplicity, human warmth</td></tr>
+<tr><td>3</td><td>Swiss/International</td><td>Finance, tech, healthcare</td><td>Swiss international style, clean grid, bold sans-serif, structured, precise, confident, Helvetica-inspired</td></tr>
+<tr><td>4</td><td>Flat Design</td><td>Tech, apps, education</td><td>flat design, bold solid colors, no shadows or gradients, geometric, clean vector, playful yet professional</td></tr>
+<tr><td>5</td><td>Monochrome</td><td>Luxury, fashion, architecture</td><td>monochrome, single color palette with tonal variations, sophisticated, dramatic contrast, striking</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY B: GEOMETRIC & ABSTRACT</td></tr>
+<tr><td>6</td><td>Geometric Abstraction</td><td>Tech, finance, real estate</td><td>geometric abstract, precise shapes, mathematical precision, bold compositions, contemporary, structured</td></tr>
+<tr><td>7</td><td>Isometric</td><td>SaaS, fintech, data, gaming</td><td>isometric, 3D geometric, 30-degree angle, technical, colorful, structured dimensional illustration</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY C: BOLD & EXPRESSIVE</td></tr>
+<tr><td>8</td><td>Brutalism</td><td>Fashion, art, creative agencies</td><td>brutalist, raw concrete texture, stark oversized typography, monochrome, asymmetric, deliberately unpolished</td></tr>
+<tr><td>9</td><td>Neubrutalism</td><td>Tech startups, Gen Z, fintech</td><td>neubrutalism, thick black outlines, bold solid fill colors, sharp drop shadows, rounded shapes with hard edges</td></tr>
+<tr><td>10</td><td>Grunge/Punk</td><td>Music, streetwear, craft beer</td><td>grunge punk, distressed textures, torn paper, xerox artifacts, messy typography, DIY zine, raw and imperfect</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY D: RETRO & NOSTALGIA</td></tr>
+<tr><td>11</td><td>Y2K / Early Internet</td><td>Gen Z, fashion, beauty, gaming</td><td>Y2K aesthetic, chrome metallic textures, iridescent holographic, bubble fonts, glossy, early 2000s digital optimism</td></tr>
+<tr><td>12</td><td>Retro-Futurism</td><td>Tech, automotive, entertainment</td><td>retro-futurism, vintage sci-fi optimism, neon grids, chrome, space-age typography, 1970s-1980s future vision</td></tr>
+<tr><td>13</td><td>70s Retro</td><td>Food, lifestyle, music, cannabis</td><td>1970s retro, warm earth tones orange and brown, groovy rounded typography, sunburst patterns, halftone, vintage warmth</td></tr>
+<tr><td>14</td><td>Vintage/Heritage</td><td>Spirits, coffee, artisan goods</td><td>vintage heritage, ornate details, aged paper texture, traditional serif typography, badge and crest motifs, timeless</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY E: LUXURY & EDITORIAL</td></tr>
+<tr><td>15</td><td>Art Deco</td><td>Hotels, jewelry, luxury events</td><td>art deco, bold geometric symmetry, gold metallic, strong vertical lines, ornate geometric patterns, 1920s glamour</td></tr>
+<tr><td>16</td><td>Art Nouveau</td><td>Beauty, wellness, perfume</td><td>art nouveau, flowing organic curves, botanical floral motifs, ornate natural forms, elegant asymmetry, hand-drawn</td></tr>
+<tr><td>17</td><td>Editorial/Magazine</td><td>Media, luxury D2C, fashion</td><td>editorial magazine, strong typographic hierarchy, photography-driven, generous whitespace, sophisticated, refined</td></tr>
+<tr><td>18</td><td>Quiet Luxury</td><td>High fashion, jewelry, hospitality</td><td>quiet luxury, understated elegance, muted palette, refined serif typography, generous negative space, restrained opulence</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY F: ORGANIC & NATURAL</td></tr>
+<tr><td>19</td><td>Organic/Botanical</td><td>Wellness, organic food, skincare</td><td>organic botanical, hand-drawn plant illustrations, earthy muted palette, natural linen and paper textures, authentic</td></tr>
+<tr><td>20</td><td>Japandi</td><td>Wellness, home goods, premium tea</td><td>Japandi, Japanese minimalism meets Scandinavian warmth, neutral muted palette, wood and linen textures, clean lines with subtle wabi-sabi imperfection, calm and intentional</td></tr>
+<tr><td>21</td><td>Rustic/Craft</td><td>Craft food, bakeries, artisan</td><td>rustic craft, kraft paper, wood grain, hand-lettered typography, natural fibers, stamp and seal motifs, artisan handmade</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY G: TECH & FUTURISTIC</td></tr>
+<tr><td>22</td><td>Glassmorphism</td><td>SaaS, fintech, AI, apps</td><td>glassmorphism, frosted glass effect, semi-transparent, background blur, subtle white borders, soft gradients, modern and airy</td></tr>
+<tr><td>23</td><td>Cyberpunk</td><td>Gaming, crypto, cybersecurity</td><td>cyberpunk, dark background, neon pink and cyan, glitch effects, high contrast, dystopian futurism, circuit patterns</td></tr>
+<tr><td>24</td><td>Solarpunk</td><td>Green tech, sustainability</td><td>solarpunk, optimistic futurism, green and gold, organic forms blended with technology, botanical and solar motifs</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY H: PLAYFUL & ILLUSTRATIVE</td></tr>
+<tr><td>25</td><td>Naive Design (2026)</td><td>Any brand wanting human signal</td><td>naive design, intentionally imperfect hand-drawn, uneven strokes, wobbly shapes, childlike but skillful, warm, human-made</td></tr>
+<tr><td>26</td><td>Doodle/Hand-Drawn</td><td>Food, kids, education</td><td>hand-drawn doodle, pencil and ink line art, playful scribbles, sketch paper texture, raw personal energy, informal</td></tr>
+<tr><td>27</td><td>3D/Hyperrealistic</td><td>Tech, gaming, luxury</td><td>3D hyperrealistic, dimensional render, soft studio lighting, sculptural forms, glass and metal, premium depth, immersive</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY I: CULTURAL & PERIOD</td></tr>
+<tr><td>28</td><td>Bauhaus</td><td>Architecture, education, design</td><td>Bauhaus, geometric shapes, primary colors red yellow blue, grid-based modular, sans-serif, rational functional design</td></tr>
+<tr><td>29</td><td>Constructivism</td><td>Music, social causes, streetwear</td><td>constructivism, bold diagonal compositions, red and black, photomontage, geometric typography, propaganda poster style</td></tr>
+<tr><td>30</td><td>Future Medieval (2026)</td><td>Fashion, craft, music, gaming</td><td>future medieval, gothic blackletter modernized, folklore aesthetics, ornate but clean, heraldic elements simplified</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY J: DIGITAL-NATIVE & 2026 TRENDS</td></tr>
+<tr><td>31</td><td>Bento/Modular</td><td>SaaS, portfolios, dashboards</td><td>bento grid modular layout, balanced sections, rounded rectangle cards, structured but flexible, digital-native</td></tr>
+<tr><td>32</td><td>Blueprint/Technical</td><td>Tech, engineering, analytics</td><td>blueprint technical, engineering diagram style, deconstructed labeled views, micro-typography, grid lines, precise</td></tr>
+<tr><td>33</td><td>Grainy Blur (2026)</td><td>Fashion, beauty, wellness</td><td>grainy blur, soft focus, textured grain overlay, cinematic dreamy, warm film grain, emotionally charged, atmospheric</td></tr>
+<tr><td>34</td><td>Type Collage (2026)</td><td>Music, media, fashion</td><td>type collage, contrasting fonts and sizes mixed, typography as texture and hero, poster-like energy, editorial</td></tr>
+<tr><td>35</td><td>Scanned/Xerox (2026)</td><td>Indie, music, zines, art</td><td>xerox photocopy, scanner artifacts, crumpled paper, low ink degradation, analog imperfections, DIY zine energy, raw</td></tr>
+<tr><td colspan="4" style="background:#7c3aed;color:#fff;font-weight:bold">FAMILY K: ADDITIONAL NICHE (36-50)</td></tr>
+<tr><td>36</td><td>Boho/Bohemian</td><td>Lifestyle, wellness</td><td>bohemian, free-spirited, eclectic patterns, nature-inspired, warm earth tones, handcrafted textile textures</td></tr>
+<tr><td>37</td><td>Coastal/Nautical</td><td>Travel, hospitality, seafood</td><td>coastal nautical, ocean blues, sailing motifs, rope textures, lighthouse, sand and sea, fresh and breezy</td></tr>
+<tr><td>38</td><td>Steampunk</td><td>Games, entertainment, events</td><td>steampunk, Victorian mechanical, brass gears, leather textures, clockwork, industrial ornate, adventure</td></tr>
+<tr><td>39</td><td>Gothic/Dark Romantic</td><td>Fashion, music, beauty</td><td>gothic dark romantic, moody deep palette, ornate Victorian details, dramatic lighting, mysterious elegant</td></tr>
+<tr><td>40</td><td>Pop Art</td><td>Food, entertainment, retail</td><td>pop art, Warhol-inspired bold colors, halftone dots, comic style, ironic playful, high contrast graphic</td></tr>
+<tr><td>41</td><td>Surrealism</td><td>Creative, art, luxury</td><td>surrealism, dreamlike impossible combinations, unexpected juxtaposition, subconscious imagery, thought-provoking</td></tr>
+<tr><td>42</td><td>Vaporwave</td><td>Fashion, music, gaming</td><td>vaporwave, pastel neons pink and cyan, roman busts, 80s/90s digital nostalgia, glitch, sunset gradient</td></tr>
+<tr><td>43</td><td>Afrofuturism</td><td>Fashion, music, tech, culture</td><td>afrofuturism, African heritage meets sci-fi futurism, vibrant patterns, cosmic, technological, ancestral</td></tr>
+<tr><td>44</td><td>Chinoiserie</td><td>Home, tea, luxury, wellness</td><td>chinoiserie, East Asian decorative motifs, delicate hand-painted, elegant, blue and white, refined porcelain</td></tr>
+<tr><td>45</td><td>Mid-Century Modern</td><td>Furniture, design, hospitality</td><td>mid-century modern, 1950s clean geometry, Eames-era elegance, atomic motifs, warm wood, optimistic retro</td></tr>
+<tr><td>46</td><td>Psychedelic</td><td>Music, cannabis, festivals</td><td>psychedelic, vivid saturated colors, warped melting typography, 1960s counterculture, optical illusion, trippy</td></tr>
+<tr><td>47</td><td>Pixel Art</td><td>Gaming, nostalgia, tech</td><td>pixel art, 8-bit 16-bit retro gaming, blocky grid, limited palette, nostalgic digital, crisp edges</td></tr>
+<tr><td>48</td><td>Skeuomorphism</td><td>Premium apps, tools, games</td><td>skeuomorphism, realistic textures, 3D depth, mimics real materials, leather wood metal, tactile digital</td></tr>
+<tr><td>49</td><td>Kinetic/Motion-First</td><td>Tech, entertainment, sports</td><td>kinetic motion, identity built around movement, dynamic flowing forms, speed lines, energetic, animated feel</td></tr>
+<tr><td>50</td><td>Trinket/Collection</td><td>Retail, museum, artisan</td><td>trinket collection, curated grid of objects, specimen-sheet style, catalog, organized eclectic, collector aesthetic</td></tr>
+</table>
+
+<div class="al al-g"><strong>How to use:</strong> Client selects style → append the prompt modifier to ALL Nanobanana Pro image generation prompts for that brand. This ensures visual consistency across every asset.</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 4: ASSET PROMPTS ========== -->
+<div class="pn" id="p4">
+<div class="c">
+<h2>Nanobanana Pro — Complete Brand Kit Prompt Library</h2>
+
+<div class="al al-b"><strong>These are copy-paste prompts.</strong> Replace [BRACKETED] variables with actual brand specs from Phases 1-4. Upload previous approved assets (up to 14 reference images) for consistency. Each prompt generates one professional brand asset.</div>
+
+<h3>LOGO CREATION — 7-Step Workflow</h3>
+
+<h4>Step 1: Logomark (Symbol Only)</h4>
+<div class="cb" id="L1"><button class="cp" onclick="cc('L1')">Copy</button>Design a minimal, professional logomark symbol for a brand called [BRAND NAME]. The symbol should represent [Phase 4.3 concept — meaning, communication]. Style: [Phase 3.0 selected style + prompt modifier], [Phase 3 creative direction]. The mark should be clean, vector-like, with [Phase 4.3 shape language]. Use these exact colors: primary [HEX]. Clean white background. Simple enough to work at 16x16 pixels. Professional brand identity quality. No gradients unless specified. 1:1 aspect ratio.</div>
+
+<h4>Step 2: Wordmark (Typographic)</h4>
+<div class="cb" id="L2"><button class="cp" onclick="cc('L2')">Copy</button>Design a professional wordmark logo for '[BRAND NAME]'. Typography should feel [Phase 1.3 personality adjectives]. Style: [Phase 3.0 modifier]. Letterforms should have [Phase 4.2 type characteristics]. Custom modifications should be subtle and meaningful — [Phase 4.3 semiotic description]. Color [primary HEX]. White background. Professional brand identity. 3:1 horizontal.</div>
+
+<h4>Step 3: Combined Lockup</h4>
+<div class="cb" id="L3"><button class="cp" onclick="cc('L3')">Copy</button>Design a complete brand logo combining symbol and wordmark for '[BRAND NAME]'. Symbol: [best from Step 1]. Wordmark: [best from Step 2]. Horizontal lockup, symbol left of wordmark. Balanced proportions. Colors: [HEX codes]. White background. Professional. 4:1 aspect ratio.</div>
+
+<h4>Step 4: Color Variations</h4>
+<div class="cb" id="L4"><button class="cp" onclick="cc('L4')">Copy</button>Generate this exact logo in 6 color versions, grid layout:
+1. Full color on white (primary [HEX], secondary [HEX])
+2. Full color on dark ([dark HEX])
+3. Black (#000000) on white
+4. White (#FFFFFF) on black
+5. Brand primary [HEX] on white
+6. Grayscale on white
+16:9 aspect ratio. 4K.</div>
+
+<h4>Step 5: Construction Grid</h4>
+<div class="cb" id="L5"><button class="cp" onclick="cc('L5')">Copy</button>Create professional logo construction grid diagram. Show geometric proportional relationships with light blue construction lines on faded gray logo. Include clearspace as dashed box. Add measurements using logo elements as units. Professional guidelines quality. 16:9.</div>
+
+<h4>Step 6: Misuse Page</h4>
+<div class="cb" id="L6"><button class="cp" onclick="cc('L6')">Copy</button>Create brand guidelines logo misuse page showing 10 incorrect uses with red X overlay: stretched, compressed, wrong colors, drop shadow, busy background, rotated, cropped, too small, outlined, rearranged. 2x5 grid on white. Professional guidelines style. 16:9. 4K.</div>
+
+<h4>Step 7: Vectorize</h4>
+<p>Options: Vectorizer.ai (auto-trace to SVG), Figma "Image Trace" plugin, Claude SVG code generation, or Fiverr ($50-200).</p>
+
+<h3>BRAND KIT — 13 Asset Prompts (A-M)</h3>
+
+<h4>A. Color Palette Visual</h4>
+<div class="cb" id="A1"><button class="cp" onclick="cc('A1')">Copy</button>Create professional color palette reference card for [BRAND NAME]. Horizontal swatches: Primary [NAME] [HEX], Secondary [NAME] [HEX], Accent [NAME] [HEX], Neutral Light [HEX], Neutral Dark [HEX]. Each swatch displays name, HEX, RGB. Brand name at top. Professional guidelines style. 16:9. 4K.</div>
+
+<h4>B. Typography Specimen</h4>
+<div class="cb" id="A2"><button class="cp" onclick="cc('A2')">Copy</button>Create typography specimen sheet for [BRAND NAME] using [FONT NAME]:
+Display: '[SAMPLE TEXT]' 48pt Bold
+H1: '[SAMPLE]' 36pt Semibold
+H2: '[SAMPLE]' 28pt Medium
+Body: '[SAMPLE PARAGRAPH IN BRAND VOICE]' 16pt Regular
+Caption: '[SAMPLE]' 12pt Regular
+Colors [HEX]. White background. Font name and weights at top. 3:2. 4K.</div>
+
+<h4>C. Business Card</h4>
+<div class="cb" id="A3"><button class="cp" onclick="cc('A3')">Copy</button>Design business card for [BRAND NAME]. Front: logo [position], name, title, email, phone, website. [PRIMARY HEX] as [background/accent/text]. [FONT NAMES]. Back: [pattern/solid/element]. Show both sides angled on [surface] with soft natural light. 4:3. 4K.</div>
+
+<h4>D. Stationery Suite</h4>
+<div class="cb" id="A4"><button class="cp" onclick="cc('A4')">Copy</button>Create stationery mockup — A4 letterhead, DL envelope, business card arranged in elegant flat-lay on [surface]. Brand logo, colors [HEX]. [Design principles]. Soft natural light, overhead. 4:3. 4K.</div>
+
+<h4>E. Social Templates — Instagram Posts</h4>
+<div class="cb" id="A5"><button class="cp" onclick="cc('A5')">Copy</button>Design 4 Instagram post templates (1080x1080) in 2x2 grid:
+1. Quote/text on [primary HEX] background, [font]
+2. Product feature with brand text overlay
+3. Educational 'Did you know?' with brand icon
+4. Testimonial with avatar placeholder and brand frame
+Brand colors [HEX], fonts [NAMES], cohesive system. 1:1. 4K.</div>
+
+<h4>F. Website Mockup</h4>
+<div class="cb" id="A6"><button class="cp" onclick="cc('A6')">Copy</button>Design homepage on MacBook Pro. Nav: logo left, 4 items, CTA right. Hero: [Phase 5.7 direction]. Headline: '[TAGLINE]' in [FONT], [HEX]. CTA: '[TEXT]' in [ACCENT HEX]. Below-fold product preview. [3-word aesthetic] personality. Clean desk surface. 16:9. 4K.</div>
+
+<h4>G. Packaging (if applicable)</h4>
+<div class="cb" id="A7"><button class="cp" onclick="cc('A7')">Copy</button>Create packaging mockup — [product description] with [color] label, brand logo, product name '[NAME]', key claims in [FONT]. On [surface] with [props]. Warm golden-hour light, shallow DOF, editorial product photography. [Personality adjectives]. 4:5. 4K.</div>
+
+<h4>H. Merchandise</h4>
+<div class="cb" id="A8"><button class="cp" onclick="cc('A8')">Copy</button>Merchandise mockup — tote bag, ceramic mug, notebook on [surface]. Tote: logo mark in [color]. Mug: wordmark in [color]. Notebook: brand pattern in [colors]. Warm lifestyle photography. 4:3. 4K.</div>
+
+<h4>I. Signage</h4>
+<div class="cb" id="A9"><button class="cp" onclick="cc('A9')">Copy</button>Storefront mockup — modern minimal facade, logo as [illuminated/painted/dimensional] signage on [material]. [3-word aesthetic]. Window display, warm interior glow. Golden-hour street photography. 16:9. 4K.</div>
+
+<h4>J. Billboard</h4>
+<div class="cb" id="A10"><button class="cp" onclick="cc('A10')">Copy</button>Billboard mockup in urban setting. Logo, tagline '[TAGLINE]', [product/lifestyle image]. Brand colors [HEX], font [NAME]. Building-mounted, street-level POV, golden hour. Cinematic. 16:9. 4K.</div>
+
+<h4>K. Presentation Slide</h4>
+<div class="cb" id="A11"><button class="cp" onclick="cc('A11')">Copy</button>Brand presentation title slide — logo centered, tagline below, subtle [pattern/gradient/texture] background using [HEX]. [FONTS]. Premium presentation quality. 16:9. 4K.</div>
+
+<h4>L. Email Template</h4>
+<div class="cb" id="A12"><button class="cp" onclick="cc('A12')">Copy</button>Email template on iPhone — logo header, hero image, headline '[WELCOME TEXT]' in brand font, body paragraph, CTA button [ACCENT HEX]. Brand personality. Phone in hand or on surface. 4:5. 4K.</div>
+
+<h4>M. Guidelines Cover</h4>
+<div class="cb" id="A13"><button class="cp" onclick="cc('A13')">Copy</button>Brand guidelines cover — logo prominent, 'Brand Guidelines' in [SECONDARY FONT], 'v1.0', '[MONTH YEAR]'. [Primary color/pattern/texture] background. Premium, coffee-table-book quality. 3:4. 4K.</div>
+
+<h4>Multi-Image Consistency (use after first 5 assets approved)</h4>
+<div class="cb" id="A14"><button class="cp" onclick="cc('A14')">Copy</button>Uploading 5 approved brand assets as reference [logo, palette, type specimen, business card, packaging]. Using these as complete style guide, generate [next asset] maintaining identical visual DNA — same colors, typography, photo style, minimalism level, personality.</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 5: GEO BRIDGE ========== -->
+<div class="pn" id="p5">
+<div class="c">
+<h2>GEO-Brand Bridge — Connecting Phase 9 to Triple-Threat Visibility</h2>
+
+<div class="al al-g"><strong>This is where Brand Design becomes a recurring revenue service.</strong> Phase 9 of the mega-prompt produces a GEO strategy that feeds directly into your Triple-Threat Visibility offering (SEO + AEO + GEO). Every brand client becomes a potential retainer client.</div>
+
+<h3>AI-Optimized Brand Description Template</h3>
+<div class="al al-b">Create this for EVERY brand client. Use verbatim on website About page, press kit, and structured data. AI systems that crawl the site will learn from this description.</div>
+<div class="cb" id="G1"><button class="cp" onclick="cc('G1')">Copy</button>[Brand Name] is a [category] brand founded in [year] by [founder name and credential]. [Brand Name] [UVP — what it uniquely does]. The brand was founded because [founder story in 2 sentences]. Its primary products/services are [list]. The brand is known for [2-3 key differentiators]. [Brand Name] serves [primary audience]. Its founding principles are [3 core values in plain language]. The brand is headquartered in [location] and available [where].</div>
+
+<h3>Brand Voice AI Test — 5-Question Gate</h3>
+<p>Before publishing ANY AI-generated brand content:</p>
+<table>
+<tr><th>#</th><th>Test</th><th>Fail Condition</th></tr>
+<tr><td>1</td><td><strong>Identity:</strong> Does this sound like [Brand] and no other?</td><td>Could replace brand name with competitor → FAIL → rewrite</td></tr>
+<tr><td>2</td><td><strong>Archetype:</strong> Reflects primary + secondary archetype in right balance?</td><td>Too cold/intellectual OR too soft/vague → FAIL → adjust</td></tr>
+<tr><td>3</td><td><strong>Persona:</strong> Would primary persona feel genuinely seen?</td><td>Feels generic → FAIL → rewrite with persona details</td></tr>
+<tr><td>4</td><td><strong>Channel:</strong> Volume Dial set correctly for this platform?</td><td>Would work on LinkedIn but feels wrong on Instagram → recalibrate</td></tr>
+<tr><td>5</td><td><strong>Grammar:</strong> Passes all brand grammar rules?</td><td>Contractions/Oxford comma/exclamation/banned words → edit specifically</td></tr>
+</table>
+
+<h3>GEO Entity-Building Priority Signals</h3>
+<table>
+<tr><th>Priority</th><th>Signal</th><th>Action</th></tr>
+<tr><td>1</td><td>Google Business Profile</td><td>Complete ALL fields — free, immediate</td></tr>
+<tr><td>2</td><td>Wikidata entry</td><td>Create manually — free, powerful for AI</td></tr>
+<tr><td>3</td><td>LinkedIn Company Page</td><td>Full profile, active, founder connected</td></tr>
+<tr><td>4</td><td>Press mentions</td><td>1 recognized publication > 100 SEO articles for AI training</td></tr>
+<tr><td>5</td><td>Podcast appearances</td><td>YouTube + Spotify + Apple — cited as authority signals</td></tr>
+<tr><td>6</td><td>Schema markup</td><td>Organization, Person, Product, Article, FAQ, Breadcrumb, Review, HowTo</td></tr>
+</table>
+
+<h3>AI-Citation-Ready Content Priorities</h3>
+<p>AI systems preferentially cite content that is: DEFINITIVE (own the definition), COMPREHENSIVE (covers topic fully), STRUCTURED (headers/lists/tables), ATTRIBUTED (named expert), CURRENT (updated within 12 months), CITED (references research).</p>
+
+<h3>Sales Bridge: Brand → Triple-Threat Retainer</h3>
+<div class="al al-p"><strong>The pitch:</strong> "Your brand identity is built. But in 2026, 25-40% of brand discovery happens through AI — ChatGPT, Perplexity, Claude, Google AI Overviews. If AI systems don't know your brand, 40% of potential customers will never find you. Our Triple-Threat Visibility service ensures your brand is visible where it matters: Google search (SEO), AI answer engines (AEO), and AI-generated recommendations (GEO)."
+
+<strong>Key stats for the pitch:</strong> ~417B Google searches/month, ~60% zero-click searches, 91% more paid clicks for brands in AI Overviews, 800M+ weekly ChatGPT users, 750M+ monthly Gemini users. Established agencies charge $5,000-$25,000/month for GEO alone.</div>
+
+<h3>Quarterly GEO Audit Protocol</h3>
+<p>Every 3 months: Search 5 AI tools for brand-adjacent queries → Screenshot and log responses → Identify incorrect information → Submit corrections via Google Knowledge Panel + Wikidata → Track citation frequency → Refresh cornerstone content annually.</p>
+
+</div>
+</div>
+
+<!-- ========== TAB 6: QUALITY GATES ========== -->
+<div class="pn" id="p6">
+<div class="c">
+<h2>Brand-Specific Quality Gates</h2>
+
+<h3>Brand Kit Completeness Checklist (before declaring any brand project done)</h3>
+<table>
+<tr><th>Check</th><th>Status</th></tr>
+<tr><td>Every logo variation exists in SVG, PNG, PDF</td><td>[ ]</td></tr>
+<tr><td>Color palette documented with HEX, RGB, CMYK</td><td>[ ]</td></tr>
+<tr><td>Font files + valid licenses included</td><td>[ ]</td></tr>
+<tr><td>Every template is editable (not flat images)</td><td>[ ]</td></tr>
+<tr><td>All templates use exact brand colors (verified HEX)</td><td>[ ]</td></tr>
+<tr><td>All templates use exact brand fonts (not substitutes)</td><td>[ ]</td></tr>
+<tr><td>Print files: CMYK, 300dpi, bleed</td><td>[ ]</td></tr>
+<tr><td>Digital files: RGB, web-optimized</td><td>[ ]</td></tr>
+<tr><td>Brand guidelines document complete and navigable</td><td>[ ]</td></tr>
+<tr><td>5+ photorealistic mockups</td><td>[ ]</td></tr>
+<tr><td>Brand DNA One-Pager as standalone PDF</td><td>[ ]</td></tr>
+</table>
+
+<h3>Pre-Launch Checklist (from Phase 10.1 — for Premium tier clients)</h3>
+<table>
+<tr><th>Category</th><th>Items</th></tr>
+<tr><td>Legal</td><td>Trademark search done, domain purchased, social handles claimed, Terms/Privacy drafted</td></tr>
+<tr><td>Digital</td><td>Website live with SSL, Google Search Console verified, GA4 installed, schema markup validated, OG images set, favicon installed, Core Web Vitals passing, mobile verified</td></tr>
+<tr><td>Email</td><td>Platform set up, welcome sequence built + tested, email signature installed, CAN-SPAM/GDPR compliant</td></tr>
+<tr><td>Social</td><td>All profiles complete with approved assets, first 9 Instagram posts ready, 30-day content calendar built</td></tr>
+<tr><td>Operations</td><td>Guidelines shared with all vendors, template library accessible, brand training conducted</td></tr>
+</table>
+
+<h3>AI Content Governance Matrix (from Phase 9.2)</h3>
+<table>
+<tr><th>Tier</th><th>Content Types</th><th>Rule</th></tr>
+<tr><td><span class="bg bg-g">Permitted</span></td><td>Blog drafts, email subjects, social captions, SEO meta, FAQ, product descriptions, ad copy variations, internal comms</td><td>AI drafts, human spot-checks</td></tr>
+<tr><td><span class="bg bg-b">Restricted</span></td><td>Founder voice content, crisis communications, regulatory content, press releases, partnership announcements, content claiming original research</td><td>AI assists, human must substantially rewrite/approve</td></tr>
+<tr><td><span class="bg bg-p">Prohibited</span></td><td>Fabricated quotes, false health claims, fake certifications, fake reviews, deepfakes without consent, content violating platform ToS</td><td>AI must NOT generate, regardless of review</td></tr>
+</table>
+
+<h3>Brand Design Scorecard (append to all brand deliverables)</h3>
+<div class="cb" id="SC"><button class="cp" onclick="cc('SC')">Copy</button>BRAND DESIGN QUALITY SCORECARD
+═══════════════════════════════
+Strategic Alignment:  [X/10] — decisions tied to brand DNA?
+Visual Consistency:   [X/10] — color/type/imagery unified?
+Semiotic Clarity:     [X/10] — symbols communicate intended meaning?
+Competitive Diff:     [X/10] — occupies empty space in category?
+Persona Resonance:    [X/10] — primary persona feels "this is mine"?
+Practical Execution:  [X/10] — all specs actionable with tool stack?
+Cultural Safety:      [X/10] — checked for all target markets?
+Generic Count:        [X] sentences that could apply to any brand
+Adversarial Test:     [PASS/FAIL] — would a senior brand strategist approve?
+OVERALL:              [X/10]
+GAPS:                 [list or "None"]</div>
+
+</div>
+</div>
+
+<!-- ========== TAB 7: 20 FOLLOW-UPS ========== -->
+<div class="pn" id="p7">
+<div class="c">
+<h2>20 Follow-Up Prompts — Post-Delivery Extensions &amp; Upsells</h2>
+
+<div class="al al-b"><strong>Usage:</strong> After completing a brand engagement, use these to go deeper on specific deliverables. Each is a potential upsell or value-add. Paste into a new conversation with the full brand context from Phases 1-12 as context.</div>
+
+<h3>Core Deliverables (1-5) — High Upsell Value</h3>
+<table>
+<tr><th>#</th><th>Prompt</th><th>Output</th><th>Upsell ₹</th></tr>
+<tr><td>1</td><td><strong>Website Copy Deck</strong> — Complete copy for all pages (hero, about, product, contact, 404) in brand voice with SEO meta</td><td>Full website copy</td><td>₹10,000-20,000</td></tr>
+<tr><td>2</td><td><strong>Creative Brief for Designers</strong> — Comprehensive brief for external designer including all Phase 1-12 specs, evaluation criteria</td><td>PDF-ready brief</td><td>Included in Premium</td></tr>
+<tr><td>3</td><td><strong>30-Day Social Calendar</strong> — Platform-specific content calendar with captions, visual descriptions, hashtags, posting times</td><td>30 posts planned</td><td>₹8,000-15,000</td></tr>
+<tr><td>4</td><td><strong>Pitch Deck Script</strong> — 12-minute investor/partner script, slide-by-slide, in brand voice</td><td>Presentation script</td><td>₹10,000-20,000</td></tr>
+<tr><td>5</td><td><strong>PR Strategy + Press Release</strong> — 90-day PR plan + publication-ready launch press release (AP Style)</td><td>PR plan + release</td><td>₹8,000-15,000</td></tr>
+</table>
+
+<h3>Brand Kit Creation (6-12) — Production Prompts</h3>
+<table>
+<tr><th>#</th><th>Prompt</th><th>Output</th></tr>
+<tr><td>6</td><td><strong>Nanobanana Pro Logo Prompts</strong> — 5 optimized prompts (2 logomark, 2 wordmark, 1 lockup) with /imagine format</td><td>Ready-to-paste prompts</td></tr>
+<tr><td>7</td><td><strong>SVG Logo Code</strong> — Production-ready SVG in 4 variations (full color, black, white, brand primary)</td><td>SVG code blocks</td></tr>
+<tr><td>8</td><td><strong>Figma Setup Guide</strong> — Step-by-step for minimal-experience user: colors, text styles, grid, 5 components</td><td>Figma tutorial</td></tr>
+<tr><td>9</td><td><strong>HTML Email Signature</strong> — Renders in Gmail/Apple Mail/Outlook, mobile-responsive, CAN-SPAM compliant</td><td>HTML/CSS code</td></tr>
+<tr><td>10</td><td><strong>Social Media Template Brief</strong> — Specs for all platform templates in Canva/Figma with dimensions, safe zones, brand elements</td><td>Design brief</td></tr>
+<tr><td>11</td><td><strong>Packaging Production Brief</strong> — Print-ready vendor brief: materials, CMYK, Pantone, die lines, regulatory</td><td>Vendor brief</td></tr>
+<tr><td>12</td><td><strong>Sonic Branding Brief</strong> — Commission brief for audio specialist with all Phase 6 specs</td><td>Audio brief</td></tr>
+</table>
+
+<h3>Nanobanana Pro Follow-Ups (13-16) — Visual Extensions</h3>
+<table>
+<tr><th>#</th><th>Prompt</th><th>Output</th></tr>
+<tr><td>13</td><td><strong>Instagram Feed Preview</strong> — 9-post 3×3 grid showing brand visual rhythm (3 product, 2 lifestyle, 2 educational, 1 quote, 1 founder)</td><td>Feed preview image</td></tr>
+<tr><td>14</td><td><strong>Magazine Advertisement</strong> — Full-page ad with editorial quality, brand specs, photography direction</td><td>Ad mockup</td></tr>
+<tr><td>15</td><td><strong>Seasonal Packaging</strong> — 5 seasonal variants maintaining brand DNA with campaign accent colors</td><td>5 packaging variants</td></tr>
+<tr><td>16</td><td><strong>Brand Story Visual Sequence</strong> — 5-panel cinematic brand narrative (Problem → Discovery → Solution → Transformation → Invitation)</td><td>5-panel story</td></tr>
+</table>
+
+<h3>Extended Creation (17-20) — Advanced Deliverables</h3>
+<table>
+<tr><th>#</th><th>Prompt</th><th>Output</th></tr>
+<tr><td>17</td><td><strong>Suno AI Sonic Logo Prompts</strong> — 5 optimized prompts for sonic logo concepts (literal, minimal, warm, modern, distinctive)</td><td>Audio prompts</td></tr>
+<tr><td>18</td><td><strong>No-Code Website Setup Guide</strong> — Platform-specific (Squarespace/Framer) setup matching brand specs</td><td>Website tutorial</td></tr>
+<tr><td>19</td><td><strong>Brand Presentation Slides</strong> — 43-slide content with headline, body, visual direction, speaker notes per slide</td><td>Slide content</td></tr>
+<tr><td>20</td><td><strong>Complete Collateral Copy Pack</strong> — All copy for stationery, packaging, email sequences, social bios, ad headlines, UX copy</td><td>Master copy doc</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ========== TAB 8: V3 UPDATES ========== -->
+<div class="pn" id="p8">
+<div class="c">
+<h2>Updates Required in DEFINITIVE_FINAL_SYSTEM_v3</h2>
+
+<h3>1. Role Mapping Update (P5 in User Preferences + Project Instructions)</h3>
+<div class="al al-y"><strong>Current:</strong> "Brand work → brand strategist"<br>
+<strong>Update to:</strong> "Brand work → elite brand architect &amp; designer (neuroscience-backed, semiotic analysis, 2025-2026 design standards)"</div>
+
+<h3>2. New Trigger Prompt — Add as Prompt 10</h3>
+<p>The Brand Design Engagement prompt in Tab 2 of this kit becomes <strong>Prompt 10</strong> in the v3 system. Tab 3 heading should update from "All 9 Trigger Prompts" to "All 10 Trigger Prompts."</p>
+
+<h3>3. Brand Design Project Instructions (paste into dedicated Brand Design project)</h3>
+<div class="cb" id="PI2"><button class="cp" onclick="cc('PI2')">Copy</button>═══ BRAND DESIGN PROJECT — QUALITY GATES ═══
+
+Auto-verify on EVERY response in this project:
+□ Every creative decision JUSTIFIED with strategic reasoning
+  tied to brand DNA, audience psychology, competitive landscape,
+  semiotic opportunity, or neuroscience of perception/memory
+□ ZERO generic sentences — every output specific to THIS brand
+□ Color specs include HEX + RGB minimum
+□ Typography specs include specific font name + weight + size
+□ Nanobanana Pro prompts are EXACT — ready to paste, not vague
+□ Cultural sensitivity checked for all target markets
+□ India/South Asia context where client is Indian
+□ All deliverables are portfolio-quality
+□ Pricing references in INR where relevant
+
+If ANY gate cannot be met: flag before delivering.
+
+═══ ROLE ═══
+You are an elite Brand Architect operating at the intersection
+of business strategy, neuroscience, cultural anthropology, 
+semiotics, color science, typography research, Gestalt 
+psychology, and 2025-2026 design execution.
+
+═══ TOOL STACK ═══
+All visual assets generated with:
+- Nanobanana Pro (primary image generation)
+- Canva (design templates, mockups)
+- Kittl (logo, typography)
+- Recraft (vector assets)
+- Ideogram (text-in-image)
+- Coolors.co / Realtime Colors (palette)
+- Google Fonts / Fontshare (typography)
+- Smartmockups / Canva Mockups (free mockups)
+
+═══ BRAND ENGAGEMENT PHASES ═══
+Phase 1: Strategic Foundation (DNA, archetypes, personas, SWOT)
+Phase 2: Verbal Identity (voice, tone, messaging, taglines)
+Phase 3.0: Design Style Selection (50-style menu)
+Phase 3: Creative Direction (2-3 directions, mood boards)
+Phase 4: Visual Identity (color, type, logo, imagery)
+Phase 5: Digital Design System (tokens, components, responsive)
+Phase 6: Sonic & Sensory Identity
+Phase 7: Architecture & Applications (stationery, social, kit)
+Phase 8: Brand Guidelines Document
+Phase 9: AI Content & GEO (→ feeds Triple-Threat Visibility)
+Phase 10: Launch & Governance
+Phase 11: Designer Handoff & File Delivery
+Phase 12: QA Self-Review
+
+Execute phases sequentially. Pause after each for approval.
+Bridge to new conversations after Phase 4-5 if context is long.</div>
+
+<h3>4. Implementation Steps</h3>
+<table>
+<tr><th>#</th><th>Action</th><th>Where</th><th>Time</th></tr>
+<tr><td>1</td><td>Create "Brand Design" project in Claude</td><td>Projects → New</td><td>30s</td></tr>
+<tr><td>2</td><td>Paste Brand Design Project Instructions (above)</td><td>Project settings</td><td>1m</td></tr>
+<tr><td>3</td><td>Save this kit as Google Doc for reference</td><td>Google Drive</td><td>2m</td></tr>
+<tr><td>4</td><td>Save Client Intake Brief as separate Google Doc/Form</td><td>Google Drive</td><td>2m</td></tr>
+<tr><td>5</td><td>Save Brand Engagement Trigger Prompt (Tab 2)</td><td>Your trigger prompts doc</td><td>1m</td></tr>
+<tr><td>6</td><td>Update v3 role mapping: Brand → elite brand architect</td><td>User Preferences</td><td>30s</td></tr>
+<tr><td>7</td><td>Keep source file (Brand_Design_Master_Prompt.txt) in Drive</td><td>Google Drive</td><td>30s</td></tr>
+</table>
+
+<div class="al al-g"><strong>Total setup: ~8 minutes.</strong> After that, every brand design engagement follows the same trigger prompt → phase-by-phase execution → quality gate → deliverable flow.</div>
+
+<h3>5. Why I Didn't Find This For You</h3>
+<p>Direct answer: This is a custom-built mega-prompt, not a discoverable public resource. It wasn't published as a GitHub skill, Chrome extension, or indexed community resource — it's a proprietary creation. The skills I cataloged in v3 Tab 4 were sourced from GitHub repos, the Anthropic skills ecosystem, and community-published tools. This prompt exists in a different category: it's a domain-specific operational blueprint, not an installable skill. Now that you've brought it in, it's integrated.</p>
+
+</div>
+</div>
+
+<script>
+function sw(n){document.querySelectorAll('.pn').forEach(p=>p.classList.remove('show'));document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));document.getElementById('p'+n).classList.add('show');document.querySelectorAll('.tab')[n].classList.add('on')}
+function cc(id){const b=document.getElementById(id),n=b.querySelector('.cp'),t=b.innerText.replace('Copy','').replace('Copied!','').trim();navigator.clipboard.writeText(t).then(()=>{n.textContent='Copied!';n.classList.add('ok');setTimeout(()=>{n.textContent='Copy';n.classList.remove('ok')},2000)})}
+</script>
+
+</body>
+</html>
